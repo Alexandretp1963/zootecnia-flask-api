@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zootecnia Equina com Alexandre</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+    header { background-color: #004225; color: #fff; padding: 20px 0; text-align: center; background-image: url('https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; }
+    nav ul { list-style: none; padding: 0; display: flex; justify-content: center; margin: 10px 0 0; background-color: rgba(0, 66, 37, 0.8); }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+    section { padding: 60px 20px; text-align: center; }
+    section#inicio { background: url('https://images.unsplash.com/photo-1592878893917-54c7f20bc4c1?auto=format&fit=crop&w=1350&q=80') no-repeat center center; background-size: cover; color: white; }
+    section#sobre, section#servicos, section#blog, section#contato, section#clientes { background-color: #ffffff; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    footer { background-color: #004225; color: #fff; text-align: center; padding: 10px 0; margin-top: 20px; }
+    .whatsapp-button { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    form { display: flex; flex-direction: column; align-items: center; max-width: 500px; margin: 20px auto; }
+    input, textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    button { background-color: #004225; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+    button:hover { background-color: #006837; }
+    .clientes-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
+    .cliente-card { background: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 20px; width: 200px; text-align: center; }
+    .cliente-card img { max-width: 100%; height: auto; border-radius: 6px; margin-bottom: 10px; }
+    .blog-post { margin: 20px auto; max-width: 800px; text-align: left; background: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .blog-post h3 { color: #004225; }
+    .blog-post p { line-height: 1.6; }
+    .read-more { display: inline-block; margin-top: 10px; background-color: #004225; color: #fff; padding: 8px 15px; text-decoration: none; border-radius: 5px; }
+    .read-more:hover { background-color: #006837; }
+    .view-all-posts { display: inline-block; margin: 30px auto 0; background-color: #006837; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; }
+    .view-all-posts:hover { background-color: #004225; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zootecnia Equina com Alexandre</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#clientes">Clientes e Parceiros</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bem-vindo ao Universo da Zootecnia Equina</h2>
+    <p>Consultoria, Manejo e Nutrição para Equinos de Alto Desempenho.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Alexandre</h2>
+    <p>Zootecnista especializado em Nutrição Animal, Gestão em Equinocultura e Reprodução de Equinos. Paixão por transformar conhecimento em resultados no campo.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços de Consultoria</h2>
+    <ul>
+      <li>Formulação de Dietas Personalizadas para Equinos</li>
+      <li>Planejamento Nutricional e Manejo Reprodutivo</li>
+      <li>Programa de Suplementação Estratégica</li>
+      <li>Consultoria Online e Presencial</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>Artigos, Dicas e Atualizações sobre a prática da Zootecnia Equina.</p>
+    <div class="blog-post">
+      <h3>Qual a Melhor Fonte de Energia para Cavalos Atletas?</h3>
+      <p>Quando falamos em cavalos de alta performance, a escolha correta da fonte de energia é essencial para o desempenho esportivo e a recuperação pós-prova. Cavalo de explosão (corrida, tambor) se beneficia de carboidratos de rápida digestão como milho e aveia. Já cavalos de resistência (enduro, paleteada) necessitam de fontes de gordura de alta qualidade como óleo de arroz ou canola. Cada cavalo é único, e a estratégia nutricional deve ser personalizada para garantir saúde e performance ideais.</p>
+      <a href="#" class="read-more">Leia Mais</a>
+    </div>
+    <div class="blog-post">
+      <h3>Importância da Suplementação Mineral para Cavalos em Trabalho</h3>
+      <p>Minerais como cálcio, fósforo, magnésio e eletrólitos desempenham papéis essenciais na saúde musculoesquelética e no desempenho dos cavalos. A deficiência mineral pode causar queda de desempenho, problemas ósseos e musculares, e até mesmo cólicas. A suplementação correta é personalizada para o tipo de atividade e as condições ambientais do animal.</p>
+      <a href="#" class="read-more">Leia Mais</a>
+    </div>
+    <div class="blog-post">
+      <h3>Estratégias de Manejo Nutricional para Cavalos Idosos</h3>
+      <p>Com o avanço da idade, os cavalos têm necessidades nutricionais específicas. Dietas ricas em fibras de alta digestibilidade, suplementação de vitaminas antioxidantes e ajustes no fornecimento energético são fundamentais para manter a saúde e qualidade de vida de cavalos seniores.</p>
+      <a href="#" class="read-more">Leia Mais</a>
+    </div>
+    <div class="blog-post">
+      <h3>O Papel dos Probióticos na Saúde Digestiva dos Equinos</h3>
+      <p>Probióticos ajudam a equilibrar a microbiota intestinal dos cavalos, melhorando a digestibilidade dos nutrientes, prevenindo distúrbios digestivos e fortalecendo o sistema imunológico. A inclusão adequada na dieta é uma ferramenta poderosa para o manejo sanitário e nutricional.</p>
+      <a href="#" class="read-more">Leia Mais</a>
+    </div>
+    <div class="blog-post">
+      <h3>Como a Hidratação Correta Impacta a Performance de Cavalos Atletas</h3>
+      <p>A hidratação adequada é essencial para o desempenho atlético e a recuperação de cavalos atletas. Perdas excessivas de líquidos e eletrólitos podem comprometer a função muscular, a resistência e a saúde geral. Estratégias de manejo hídrico são fundamentais para otimizar o rendimento.</p>
+      <a href="#" class="read-more">Leia Mais</a>
+    </div>
+    <a href="#" class="view-all-posts">Ver Todos os Artigos</a>
+  </section>
+
+  <section id="clientes">
+    <h2>Clientes e Parceiros</h2>
+    <p>Conheça algumas cabanhas, propriedades e instituições que confiam em nosso trabalho:</p>
+    <div class="clientes-grid">
+      <div class="cliente-card">
+        <img src="https://via.placeholder.com/150" alt="Cabanha Exemplo 1">
+        <p>Cabanha Exemplo 1</p>
+      </div>
+      <div class="cliente-card">
+        <img src="https://via.placeholder.com/150" alt="Cabanha Exemplo 2">
+        <p>Cabanha Exemplo 2</p>
+      </div>
+      <div class="cliente-card">
+        <img src="https://via.placeholder.com/150" alt="Sindicato Rural Exemplo">
+        <p>Sindicato Rural Exemplo</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Quer saber mais? Entre em contato preenchendo o formulário abaixo:</p>
+    <form action="mailto:Equipe@zootecniaequina.com" method="post" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu Nome" required>
+      <input type="email" name="email" placeholder="Seu E-mail" required>
+      <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+    <p>Email direto: <a href="mailto:Equipe@zootecniaequina.com">Equipe@zootecniaequina.com</a></p>
+    <p>Instagram: @zootecniapratica</p>
+    <p>WhatsApp: (51) 98061-8200</p>
+  </section>
+
+  <a class="whatsapp-button" href="https://wa.me/5551980618200" target="_blank">&#128222;</a>
+
+  <footer>
+    <p>&copy; 2025 Zootecnia Equina com Alexandre. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

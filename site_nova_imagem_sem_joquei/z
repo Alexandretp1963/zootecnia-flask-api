@@ -1,0 +1,69 @@
+# Recriando o E-book com marca d'água após o reset (solucionando o problema)
+from fpdf import FPDF
+
+# Imagens de marca d'água (já geradas anteriormente)
+image_paleteada = '/mnt/data/A_traditional_pencil_or_charcoal_illustration_depi.png'
+image_skeleton = '/mnt/data/A_digital_illustration_in_sepia_tones_showcases_a_.png'
+image_esbarrada = '/mnt/data/A_monochromatic_digital_illustration_of_a_horse_sl.png'
+
+# Criando o E-book com marca d'água (design profissional)
+pdf = FPDF()
+pdf.set_auto_page_break(auto=True, margin=15)
+
+# Capa do E-book
+pdf.add_page()
+pdf.image(image_paleteada, x=0, y=0, w=210, h=297)
+pdf.set_text_color(0, 102, 204)
+pdf.set_font("Arial", 'B', 28)
+pdf.set_xy(10, 30)
+pdf.multi_cell(0, 12, "Guia Completo de Nutrição e Manejo para Cavalos Atletas", align="C")
+pdf.set_text_color(255, 204, 0)
+pdf.set_font("Arial", 'I', 18)
+pdf.set_xy(10, 60)
+pdf.multi_cell(0, 10, "Energia, Suplementação e Estratégias Práticas", align="C")
+pdf.set_text_color(204, 51, 0)
+pdf.set_font("Arial", 'B', 16)
+pdf.set_xy(10, 90)
+pdf.multi_cell(0, 10, "Autor: Alexandre", align="C")
+
+# Páginas com marca d'água
+def add_page_with_watermark(pdf, image_path):
+    pdf.add_page()
+    pdf.image(image_path, x=0, y=0, w=210, h=297)
+    pdf.set_text_color(0, 0, 0)
+    pdf.set_font("Arial", '', 12)
+
+# Introdução
+add_page_with_watermark(pdf, image_skeleton)
+pdf.set_xy(10, 20)
+pdf.multi_cell(0, 10, "Introdução\nEste guia foi criado para oferecer informações práticas e técnicas sobre a nutrição e manejo de cavalos atletas.")
+
+# Artigo 1
+add_page_with_watermark(pdf, image_skeleton)
+pdf.set_xy(10, 20)
+pdf.multi_cell(0, 10, "Artigo 1: Qual a Melhor Fonte de Energia para Cavalos Atletas?\nTexto completo com gráficos e exemplos práticos.")
+
+# Artigo 2
+add_page_with_watermark(pdf, image_esbarrada)
+pdf.set_xy(10, 20)
+pdf.multi_cell(0, 10, "Artigo 2: Importância da Suplementação Mineral para Cavalos em Trabalho\nTexto completo com tabelas e estudos de caso.")
+
+# Artigo 3
+add_page_with_watermark(pdf, image_paleteada)
+pdf.set_xy(10, 20)
+pdf.multi_cell(0, 10, "Artigo 3: Estratégias de Manejo Nutricional para Cavalos Idosos\nTexto completo com dicas práticas.")
+
+# Conclusão e Referências
+add_page_with_watermark(pdf, image_paleteada)
+pdf.set_xy(10, 20)
+pdf.multi_cell(0, 10, "Conclusão\nA nutrição e o manejo adequado são essenciais para garantir o desempenho e a saúde dos cavalos atletas.")
+
+add_page_with_watermark(pdf, image_paleteada)
+pdf.set_xy(10, 20)
+pdf.multi_cell(0, 10, "Referências\n- FRAPE, D. \"Equine Nutrition and Feeding\".\n- NRC (2007). \"Nutrient Requirements of Horses\".\n- GEOR, R. J.; HARRIS, P.; COENEN, M. \"Equine Applied and Clinical Nutrition\".")
+
+# Salvando o E-book com marca d'água
+pdf_output = "/mnt/data/E-book_Zootecnia_Equina_Marca_Dagua.pdf"
+pdf.output(pdf_output)
+
+pdf_output

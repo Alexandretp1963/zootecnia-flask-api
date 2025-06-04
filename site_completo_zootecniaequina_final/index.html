@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zootecnia Equina com Alexandre</title>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DQYPV15W1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3DQYPV15W1');
+</script>
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('imagens/fundo-ilustrado.png') center 30% / cover no-repeat fixed;
+    color: #333;
+  }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('imagens/fundo-ilustrado.png') center 10% / cover no-repeat;
+      padding: 260px 20px 100px;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #004225;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 15px;
+      display: inline-block;
+    }
+    nav ul li a:hover {
+      background-color: #006837;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.94);
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    section#inicio {
+      text-align: center;
+    }
+    h2 {
+      color: #004225;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .blog-post {
+      background-color: #fafafa;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #c2a83e;
+    }
+    footer {
+      background-color: #004225;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    a {
+      color: #c2a83e;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    section#blog .blog-post a {text-decoration: none; color: #c2a83e;}
+    section#ebook a {text-decoration: none; color: #c2a83e;}
+    #formulario-ebook {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#formulario-ebook input {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: block;
+  font-size: 1em;
+}
+#formulario-ebook button {
+  background-color: #004225;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+#formulario-ebook button:hover {
+  background-color: #006837;
+}
+#formulario-ebook p#msg {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/* Responsividade geral para seções */
+section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+/* Espaçamento entre seções */
+section + section {
+  margin-top: 50px;
+}
+/* Formulário responsivo */
+#formulario-ebook {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#formulario-ebook input,
+#formulario-ebook button {
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+  box-sizing: border-box;
+}
+#formulario-ebook input {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+#formulario-ebook button {
+  background-color: #004225;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#formulario-ebook button:hover {
+  background-color: #006837;
+}
+#formulario-ebook p#msg {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/* Estilos específicos para telas pequenas */
+@media (max-width: 600px) {
+  header {
+    padding: 160px 20px 60px;
+  }
+  header h1 {
+    font-size: 1.8em;
+  }
+  header p {
+    font-size: 1em;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  #formulario-ebook {
+    padding: 30px 15px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zootecnia Equina: Gestão, Nutrição e Desempenho</h1>
+    <p>Consultoria especializada para cavalos atletas, cabanhas, haras e centros hípicos de alto desempenho.</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#clientes">Clientes e Parceiros</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <section id="inicio">
+    <h2>Transformando conhecimento em resultados no campo</h2>
+    <p>Atendimento técnico com base prática e zootécnica para cavalos atletas, cabanhas, haras e centros hípicos.</p>
+  </section>
+  <section id="sobre">
+    <h2>Sobre Alexandre</h2>
+    <p>Sou Zootecnista graduado e pós-graduado em Zootecnia, Nutrição Animal, Gestão em Equinocultura e Reprodução de Equinos. Atuo com foco prático, atendendo propriedades que buscam desempenho, sustentabilidade e valor agregado na criação de equinos.</p>
+  </section>
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Formulação de dietas personalizadas para cavalos atletas</li>
+      <li>Consultoria nutricional para criadores, cabanhas e competidores</li>
+      <li>Planejamento reprodutivo com foco em melhoria genética</li>
+      <li>Consultoria online e presencial com relatórios técnicos</li>
+    </ul>
+  </section>
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="blog-post">
+      <h3>Qual a Melhor Fonte de Energia para Cavalos Atletas?</h3>
+      <p>Cavalos de explosão se beneficiam de carboidratos de rápida digestão como milho e aveia. Cavalos de resistência precisam de gorduras como óleo de arroz. A estratégia nutricional deve ser adaptada à modalidade e ao nível de treinamento do animal. O equilíbrio energético ideal garante performance, recuperação eficiente e saúde a longo prazo.</p>
+      <a href="artigo1.html" class="read-more">Leia Mais</a>
+    </div>
+    <div class="blog-post">
+      <h3>Importância da Suplementação Mineral para Cavalos em Trabalho</h3>
+      <p>Cálcio, fósforo, magnésio e eletrólitos são essenciais para saúde osteomuscular.</p>
+      <a href="artigo2.html" class="read-more">Leia Mais</a>
+    </div>
+    <div class="blog-post">
+      <h3>Estratégias de Manejo Nutricional para Cavalos Idosos</h3>
+      <p>Cavalos seniores precisam de fibras de alta digestibilidade, vitaminas antioxidantes e menor densidade energética.</p>
+      <a href="artigo3.html" class="read-more">Leia Mais</a>
+    </div>
+</section>
+  <section id="formulario-ebook">
+  <h2>Receba o E-book Completo</h2>
+  <form id="ebookForm">
+    <input type="text" name="user_name" placeholder="Seu nome" required />
+    <input type="email" name="user_email" placeholder="Seu e-mail" required />
+    <button type="submit">📘 Receber E-book</button>
+  </form>
+  <p id="msg"></p>
+  <div id="downloadLinkContainer"></div>
+</section>
+  <section id="clientes">
+    <h2>Clientes e Parceiros</h2>
+    <ul>
+      <li>Cabanha São Miguel – Criadores de cavalos Crioulos para provas de função</li>
+      <li>Cabanha Estância Branca – Seleção morfológica e funcional</li>
+      <li>Sindicato Rural de Vacaria – Eventos, cursos e parcerias técnicas</li>
+      <li>Associação de Criadores do RS – Projetos técnicos e consultoria colaborativa</li>
+    </ul>
+  </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:Equipe@zootecniaequina.com">Equipe@zootecniaequina.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/5551980618200" target="_blank">(51) 98061-8200</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/zootecniapratica" target="_blank">@zootecniapratica</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Zootecnia Equina com Alexandre. Todos os direitos reservados.</p>
+  </footer>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+document.getElementById("ebookForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const nome = document.querySelector("input[name='user_name']").value;
+  const email = document.querySelector("input[name='user_email']").value;
+  const msg = document.getElementById("msg");
+
+  msg.innerText = "Enviando...";
+
+  fetch("/receber-dados", {
+    method: "POST",
+    body: new URLSearchParams({ user_name: nome, user_email: email }),
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  })
+  .then(response => response.json())
+  .then(data => {
+    msg.innerText = data.mensagem || "Sucesso!";
+    document.getElementById("ebookForm").reset();
+
+    document.getElementById("downloadLinkContainer").innerHTML = `
+      <a href="ebook_zootecniaequina_download_atualizado.html" style="
+        display: inline-block;
+        background-color: #2e7d32;
+        color: white;
+        padding: 14px 28px;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+      ">
+        📘 Clique aqui para baixar o E-book
+      </a>`;
+  })
+  .catch(error => {
+    msg.innerText = "Erro ao enviar. Tente novamente.";
+    console.error("Erro:", error);
+  });
+});
+</script>
+
+</body>
+</html>
